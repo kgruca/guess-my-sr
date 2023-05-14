@@ -1,4 +1,5 @@
 import Image from "next/image";
+import TopNavigation from "@/components/Topnav";
 
 export default function Home() {
   return (
@@ -6,6 +7,7 @@ export default function Home() {
       className="h-screen flex flex-col bg-gradient-to-b from-cyan-800 via-blue-950 
       to-indigo-950 items-center pt-20"
     >
+      <TopNavigation />
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-5xl pb-20">Guess My SR</h1>
         <Image
