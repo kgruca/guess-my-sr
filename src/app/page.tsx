@@ -4,11 +4,11 @@ import TopNavigation from "@/components/Topnav";
 export default function Home() {
   return (
     <div
-      className="h-screen flex flex-col bg-gradient-to-b from-cyan-800 via-blue-950 
-      to-indigo-950 items-center pt-20"
+      className="bg-gradient-to-b from-cyan-800 via-blue-950 
+      to-indigo-950 items-center"
     >
       <TopNavigation />
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center h-screen">
         <h1 className="text-5xl pb-20">Guess My SR</h1>
         <Image
           src="/../public/kings.jpg"
