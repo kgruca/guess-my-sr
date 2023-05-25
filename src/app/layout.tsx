@@ -14,10 +14,7 @@ export const metadata = {
 const Layout = ({ children }: { children: React.ReactNode }) => (
   <html lang="en">
     <body className={inter.className}>
-      <div
-        className="bg-gradient-to-b from-cyan-800 via-blue-950 
-      to-indigo-950 items-center"
-      >
+      <div className="bg-gradient-to-b from-slate-800 to-slate-950 items-center">
         <nav
           className="flex w-full flex-row sticky top-0 flex-nowrap items-center justify-between 
             h-14"
