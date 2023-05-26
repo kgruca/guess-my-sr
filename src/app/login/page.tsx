@@ -8,10 +8,10 @@ const Login = () => (
       <div className="-space-y-px rounded-md shadow-sm">
         <div>
           <input
-            type="email"
+            type="text"
             autoComplete="none"
             required
-            placeholder="Email address"
+            placeholder="username"
             className="block w-full appearance-none rounded-none rounded-tl-md border mb-2
             border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500
               focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500"
@@ -22,7 +22,7 @@ const Login = () => (
             type="password"
             autoComplete="none"
             required
-            placeholder="Password"
+            placeholder="password"
             className="block w-full appearance-none rounded-none rounded-br-md border mb-2
             border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500
               focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500"
@@ -56,12 +56,12 @@ const Login = () => (
       </button>
     </form>
     <p className="pt-4">
-      Don&apos;t have an account?{" "}
+      Ready to compete?{" "}
       <Link
         href="/signup"
         className="font-medium text-indigo-500 hover:text-indigo-400"
       >
-        Sign Up!
+        Create an account!
       </Link>
     </p>
   </div>
