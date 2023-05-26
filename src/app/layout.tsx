@@ -3,6 +3,9 @@ import { Inter } from "next/font/google";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../../public/bronze.png";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+library.add(faEye, faEyeSlash);
 
 const inter = Inter({ subsets: ["latin"] });
 
