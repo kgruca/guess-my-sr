@@ -14,7 +14,7 @@ export const metadata = {
 const Layout = ({ children }: { children: React.ReactNode }) => (
   <html lang="en">
     <body className={inter.className}>
-      <div className="bg-gradient-to-b from-slate-800 to-slate-950 items-center">
+      <div className="bg-gradient-to-b from-slate-200 to-slate-300 items-center text-slate-800">
         <nav
           className="flex w-full flex-row sticky top-0 flex-nowrap items-center justify-between 
             h-14"
@@ -23,9 +23,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => (
             <Image src={Logo} width={50} height={50} alt="logo" />
           </Link>
           <div className="flex flex-row w-full justify-end gap-4 mr-4">
-            <Link href="/rankings">🏆 Rankings</Link>
-            <Link href="/about">📖 About</Link>
-            <Link href="/login">🎮 Log In</Link>
+            <Link href="/rankings">Rankings</Link>
+            <Link href="/about">About</Link>
+            <Link href="/login">Log In</Link>
           </div>
         </nav>
         <div className="flex flex-col pt-10 items-center h-screen">

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Login = () => (
   // <h1 className="text-5xl">Login</h1>
-  <div className="text-center text-neutral-100 w-full max-w-md">
+  <div className="text-center w-full max-w-md">
     <h2 className="text-4xl">Log into your account</h2>
     <form className="mt-8 space-y-6">
       <div className="-space-y-px rounded-md shadow-sm">
@@ -30,7 +30,7 @@ const Login = () => (
         </div>
       </div>
       <div className="flex items-center justify-between">
-        <label className="ml-2 flex items-center gap-1 text-sm text-neutral-100">
+        <label className="ml-2 flex items-center gap-1 text-sm text-slate-800">
           <input
             type="checkbox"
             className="h-4 w-4 rounded border-gray-300 text-indigo-500 focus:ring-indigo-500"
@@ -40,9 +40,9 @@ const Login = () => (
         <div className="text-sm">
           <Link
             href="/"
-            className="font-medium text-neutral-100 hover:text-indigo-500"
+            className="font-medium text-indigo-500 hover:text-indigo-400"
           >
-            Forgot your password?
+            Forgot your username or password?
           </Link>
         </div>
       </div>
