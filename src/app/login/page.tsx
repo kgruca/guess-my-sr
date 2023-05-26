@@ -29,7 +29,41 @@ const Login = () => (
           />
         </div>
       </div>
+      <div className="flex items-center justify-between">
+        <label className="ml-2 flex items-center gap-1 text-sm text-neutral-100">
+          <input
+            type="checkbox"
+            className="h-4 w-4 rounded border-gray-300 text-indigo-500 focus:ring-indigo-500"
+          />
+          Remember me
+        </label>
+        <div className="text-sm">
+          <Link
+            href="/"
+            className="font-medium text-neutral-100 hover:text-indigo-500"
+          >
+            Forgot your password?
+          </Link>
+        </div>
+      </div>
+      <button
+        type="button"
+        className="text-md group relative flex w-full justify-center rounded-md border 
+          border-transparent bg-indigo-500 px-4 py-2 font-medium text-white hover:bg-indigo-400
+          focus:outline-none focus:ring-indigo-400 focus:ring-offset-2"
+      >
+        Log In
+      </button>
     </form>
+    <p className="pt-4">
+      Don&apos;t have an account?{" "}
+      <Link
+        href="/signup"
+        className="font-medium text-indigo-500 hover:text-indigo-400"
+      >
+        Sign Up!
+      </Link>
+    </p>
   </div>
 );
 
