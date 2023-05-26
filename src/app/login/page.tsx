@@ -1,6 +1,8 @@
+"use client";
 import Link from "next/link";
 import { useState } from "react";
 import { PasswordField } from "../../components/PasswordField";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -13,6 +15,7 @@ const Login = () => {
         <div className="-space-y-px rounded-md shadow-sm">
           <div>
             <input
+              value={username}
               type="text"
               autoComplete="none"
               required
@@ -20,10 +23,12 @@ const Login = () => {
               className="block w-full appearance-none rounded-none rounded-tl-md border mb-2
               border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500
                 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500"
+              onChange={(e) => setUsername(e.target.value)}
             />
           </div>
           <div>
             <input
+              value={password}
               type="password"
               autoComplete="none"
               required
@@ -31,7 +36,9 @@ const Login = () => {
               className="block w-full appearance-none rounded-none rounded-br-md border mb-2
               border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500
                 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500"
+              onChange={(e) => setPassword(e.target.value)}
             />
+            <span>{<FontAwesomeIcon icon={"eye"} onClick={() => {}} />}</span>
           </div>
         </div>
         <div className="flex items-center justify-between">
